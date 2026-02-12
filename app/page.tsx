@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { DEFAULT_LANGUAGE, isValidLanguage } from "@/lib/languages";
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const BASE_PATH = "/Portfolio";
 
 function detectLanguage(): string {
   if (typeof navigator === "undefined") return DEFAULT_LANGUAGE;
