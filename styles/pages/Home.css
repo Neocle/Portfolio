@@ -1,0 +1,28 @@
+.description-container {
+  margin-top: 50px; 
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.description-long {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.description-links {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+@keyframes slideRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+}

@@ -1,0 +1,44 @@
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -3px;
+  margin-left: -3px;
+  pointer-events: none;
+  z-index: 1000001;
+  will-change: transform;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, margin 0.2s ease;
+}
+
+.cursor-dot.hovering {
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
+  background-color: #006eff;
+}
+
+.cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+  pointer-events: none;
+  z-index: 1000000;
+  will-change: transform;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.cursor-follower.hovering {
+  opacity: 0.5;
+  border-color: #006eff;
+}

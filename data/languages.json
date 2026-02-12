@@ -1,0 +1,10 @@
+{
+  "languages": ["fr", "en", "es", "de"],
+  "languageMap": {
+    "fr": "fr_FR",
+    "en": "en_US",
+    "es": "es_ES",
+    "de": "de_DE"
+  },
+  "default": "fr"
+}
