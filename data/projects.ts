@@ -110,7 +110,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     id: "img2ascii",
     title: 'Img2Ascii',
     category: t("projects.category"),
-    image: '/images/projects/img2ascii.webp',
+    image: `${BASE_PATH}/images/projects/img2ascii.webp`,
     description: t("projects.img2ascii.description"),
     links: [
       {
@@ -162,7 +162,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     id: "ticketbot",
     title: 'Ticket Bot',
     category: t("projects.category"),
-    image: '/images/projects/ticketbot.webp',
+    image: `${BASE_PATH}/images/projects/ticketbot.webp`,
     description: t("projects.ticketbot.description"),
     links: [
       {
