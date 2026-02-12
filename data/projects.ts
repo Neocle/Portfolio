@@ -1,6 +1,8 @@
 import type { IconType } from 'react-icons';
 import { FaBook } from 'react-icons/fa';
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export interface ProjectLink {
   url: string;
   label: string;
@@ -45,7 +47,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
   {
     id: "flexbans",
     title: 'FlexBans',
-    image: '/images/projects/flexbans.webp',
+    image: `${BASE_PATH}/images/projects/flexbans.webp`,
     description: t("projects.flexbans.description"),
     links: [
       {
@@ -98,7 +100,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     ],
     conclusion: t("projects.flexbans.conclusion"),
     gallery: [
-      '/images/projects/flexbans.webp',
+      `${BASE_PATH}/images/projects/flexbans.webp`,
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Dashboard+View',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=In-Game+Menu',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Database+Schema',
@@ -150,7 +152,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     ],
     conclusion: t("projects.img2ascii.conclusion"),
     gallery: [
-      '/images/projects/img2ascii.webp',
+      `${BASE_PATH}/images/projects/img2ascii.webp`,
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Original+Image',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=ASCII+Output',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=CLI+Usage',
@@ -206,7 +208,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     ],
     conclusion: t("projects.ticketbot.conclusion"),
     gallery: [
-      '/images/projects/ticketbot.webp',
+      `${BASE_PATH}/images/projects/ticketbot.webp`,
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Ticket+Panel',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Transcript+Example',
       'https://placehold.co/600x400/1a1a1a/ffffff?text=Admin+Commands',
@@ -216,7 +218,7 @@ export const getProjects = (t: (key: string) => string): Project[] => [
     id: "?",
     title: t("projects.last.title"),
     category: t("projects.category"),
-    image: '/images/projects/last.webp',
+    image: `${BASE_PATH}/images/projects/last.webp`,
     description: t("projects.last.description"),
     tools: [],
     context: t("projects.last.context"),
