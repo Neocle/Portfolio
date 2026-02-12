@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { DEFAULT_LANGUAGE, isValidLanguage } from "@/lib/languages";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 function detectLanguage(): string {
   if (typeof navigator === "undefined") return DEFAULT_LANGUAGE;
 
@@ -28,7 +30,8 @@ function detectLanguage(): string {
 export default function RootPage() {
   useEffect(() => {
     const lang = detectLanguage();
-    window.location.replace(`/${lang}`);
+    const path = `${BASE_PATH}/${lang}`;
+    window.location.replace(path);
   }, []);
 
   return null;
