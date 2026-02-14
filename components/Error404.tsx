@@ -10,7 +10,7 @@ import { useTitle } from '@/hooks/useTitle';
 
 const Error404: React.FC = () => {
   const { t } = useT();
-  useTitle(`${t("not-found.title")} | Loïs Alirol`);
+  useTitle(`${t("404-error.title")} | Loïs Alirol`);
 
   return (
     <>

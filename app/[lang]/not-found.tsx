@@ -11,7 +11,7 @@ import { FaCode } from "react-icons/fa";
 
 export default function Page() {
   const { t } = useT();
-  useTitle(`${t("not-found.title")} | Loïs Alirol`)
+  useTitle(`${t("404-error.title")} | Loïs Alirol`)
 
   return (
     <>
