@@ -1,7 +1,7 @@
 import type { IconType } from 'react-icons';
 import { FaBook } from 'react-icons/fa';
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const BASE_PATH = "";
 
 export interface ProjectLink {
   url: string;
