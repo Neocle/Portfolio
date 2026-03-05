@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { DEFAULT_LANGUAGE, isValidLanguage } from "@/lib/languages";
+import { useTitle } from "@/hooks/useTitle";
 
 function detectLanguage(): string {
   if (typeof navigator === "undefined") return DEFAULT_LANGUAGE;
@@ -26,6 +27,8 @@ function detectLanguage(): string {
 }
 
 export default function RootPage() {
+  useTitle('Portfolio | Loïs Alirol');
+
   useEffect(() => {
     const lang = detectLanguage();
     const path = `/${lang}`;
