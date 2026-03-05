@@ -15,7 +15,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Loïs Alirol | Portfolio",
     description: "Learn more about me, check out my projects and don't hesitate to contact me.",
     images: ["https://www.loisalirol.com/web-app-manifest-512x512.png"],
