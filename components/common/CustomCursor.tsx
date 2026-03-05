@@ -7,9 +7,17 @@ const CustomCursor: React.FC = () => {
   const mousePos = useRef({ x: 0, y: 0 });
   const [followerPos, setFollowerPos] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [isTouchDevice] = useState(() => {
+    return typeof window !== 'undefined' && (
+      'ontouchstart' in window || navigator.maxTouchPoints > 0
+    );
+  });
+
   const dotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (isTouchDevice) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       mousePos.current = { x: e.clientX, y: e.clientY };
       if (dotRef.current) {
@@ -40,7 +48,9 @@ const CustomCursor: React.FC = () => {
       window.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(rafId);
     };
-  }, []);
+  }, [isTouchDevice]);
+
+  if (isTouchDevice) return null; 
 
   return (
     <>
