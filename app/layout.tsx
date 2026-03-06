@@ -1,12 +1,16 @@
 import "@/styles/App.css";
+import { Viewport } from "next";
 import { ReactNode } from "react";
+
+export const viewport: Viewport = {
+  themeColor: '#0E1525',
+}
 
 export const metadata = {
   title: "Loïs Alirol | Portfolio",
   description: "Learn more about me, check out my projects and don't hesitate to contact me.",
   keywords: ["portfolio", "lois", "alirol", "loïs", "projets", "contact", "experiences", "multilingue"],
   robots: "index, follow",
-  themeColor: "#0E1525",
   openGraph: {
     title: "Loïs Alirol | Portfolio",
     description: "Learn more about me, check out my projects and don't hesitate to contact me.",
