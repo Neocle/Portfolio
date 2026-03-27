@@ -35,6 +35,7 @@
     "page-title": "Sobre mí",
     "title": "Sobre mí",
     "description": "Mi trayectoria me ha permitido adquirir ciertas habilidades, y sobre todo una forma de trabajar para ser eficaz y encontrar soluciones.",
+    "next-button": "Mis Proyectos",
     "skills": {
       "title": "Habilidades técnicas",
       "front": {
@@ -88,6 +89,7 @@
     "title": "Proyectos",
     "description": "Aquí hay una selección de mis proyectos más importantes. Haga clic en ellos para acceder a una explicación más detallada de cada uno. ¡Puede encontrar más en mi Github!",
     "category": "Proyectos",
+    "next-button": "Contáctame",
 
     "project": {
       "notFound": "Proyecto no encontrado",
@@ -237,6 +239,7 @@
     "page-title": "Contacto",
     "title": "Hablemos",
     "description": "¿Un proyecto, una pregunta o simplemente ganas de charlar? Siempre estoy abierto a discutir ideas, colaboraciones o incluso sobre el buen tiempo.",
+    "next-button": "Volver al Inicio",
     "form-header": "Enviar un mensaje",
     "name-placeholder": "Su nombre",
     "email-placeholder": "Su email",

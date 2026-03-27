@@ -35,6 +35,7 @@
     "page-title": "À propos",
     "title": "À propos",
     "description": "Mon parcours m'a permi d'acquérir certaines compétences, et surtout une manière de travailler pour être efficace et pour trouver des solutions.",
+    "next-button": "Mes Projets",
     "skills": {
       "title": "Compétences techniques",
       "front": {
@@ -88,6 +89,7 @@
     "title": "Projets",
     "description": "Voici une sélections de mes projets les plus importants. Cliquez dessus pour accéder à une explication plus détaillée de chacun d'entre eux. Vous pouvez en trouver plus sur mon Github!",
     "category": "Projets",
+    "next-button": "Contactez Moi",
 
     "project": {
       "notFound": "Projet introuvable",
@@ -237,6 +239,7 @@
     "page-title": "Contact",
     "title": "Parlons-en",
     "description": "Un projet, une question ou simplement envie d’échanger ? Je suis toujours ouvert à discuter d’idées, de collaborations ou bien du beau temps.",
+    "next-button": "Revenir Au Début",
     "form-header": "Envoyer un message",
     "name-placeholder": "Votre nom",
     "email-placeholder": "Votre email",

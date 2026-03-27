@@ -4,7 +4,7 @@ import CustomCursor from "@/components/common/CustomCursor";
 import StarsCanvas from "@/components/common/StarCanvas";
 import TransitionLink from "@/components/common/TransitionLink";
 import Hero from "@/components/home/Hero";
-import NextLink from "@/components/home/NextLink";
+import NextLink from "@/components/common/NextLink";
 import { useT } from "@/hooks/useT";
 import { useTitle } from "@/hooks/useTitle";
 
@@ -31,7 +31,7 @@ export default function Page() {
             })}
           </p>
           
-          <NextLink />
+          <NextLink pathname="/about" labelKey="home.next-button"/>
         </section>
       </main>
     </>

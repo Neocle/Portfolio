@@ -35,6 +35,7 @@
     "page-title": "About",
     "title": "About",
     "description": "My journey has allowed me to acquire certain skills, and above all a way of working to be efficient and to find solutions.",
+    "next-button": "My Projects",
     "skills": {
       "title": "Technical Skills",
       "front": {
@@ -88,6 +89,7 @@
     "title": "Projects",
     "description": "Here is a selection of my most important projects. Click on them to access a more detailed explanation of each one. You can find more on my Github!",
     "category": "Projects",
+    "next-button": "Contact Me",
 
     "project": {
       "notFound": "Project not found",
@@ -237,6 +239,7 @@
     "page-title": "Contact",
     "title": "Let's talk",
     "description": "A project, a question, or just want to chat? I am always open to discussing ideas, collaborations, or even the weather.",
+    "next-button": "Back to Start",
     "form-header": "Send a message",
     "name-placeholder": "Your name",
     "email-placeholder": "Your email",

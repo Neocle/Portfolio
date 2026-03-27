@@ -103,6 +103,11 @@ const Navbar: React.FC = () => {
           )}
         </div>
 
+        {/*
+        
+        didn't find a proper dark/light mode yet
+        todo: implement it
+
         <button
           className="icon-btn theme-toggle"
           onClick={() => handleThemeChange()}
@@ -111,6 +116,8 @@ const Navbar: React.FC = () => {
         >
           <FaRegMoon size={18} />
         </button>
+        
+        */}
 
         <button
           className="icon-btn mobile-menu-btn"

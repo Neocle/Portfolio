@@ -1,6 +1,7 @@
 "use client"
 
 import CustomCursor from "@/components/common/CustomCursor";
+import NextLink from "@/components/common/NextLink";
 import StarsCanvas from "@/components/common/StarCanvas";
 import ProjectCard from "@/components/projects/ProjectCard";
 import { getProjects } from "@/data/projects";
@@ -60,6 +61,8 @@ return (
           </div>
         </section>
       </main>
+
+      <NextLink pathname="/contact" labelKey="projects.next-button"/>
     </>
   );
 };

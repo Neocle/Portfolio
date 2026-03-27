@@ -9,6 +9,7 @@ import '@/styles/pages/Contact.css'
 import { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
+import NextLink from "@/components/common/NextLink";
 
 export default function Page() {
   const { t } = useT();
@@ -180,6 +181,8 @@ export default function Page() {
           </div>
         </section>
       </main>
+
+      <NextLink pathname="/" labelKey="contact.next-button"/>
     </>
   );
 };

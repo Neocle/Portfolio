@@ -8,6 +8,7 @@ import { useT } from "@/hooks/useT";
 import { useTitle } from "@/hooks/useTitle";
 
 import '@/styles/pages/About.css'
+import NextLink from "@/components/common/NextLink";
 
 export default function Page() {
   const { t } = useT();
@@ -94,6 +95,8 @@ export default function Page() {
           ))}
         </section>
       </main>
+
+      <NextLink pathname="/projects" labelKey="about.next-button"/>
     </>
   );
 };

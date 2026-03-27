@@ -1,13 +1,21 @@
 import { HiArrowLongRight } from 'react-icons/hi2';
-import '@/styles/components/home/NextLink.css';
+import '@/styles/components/common/NextLink.css';
 import { useT } from '@/hooks/useT';
 import TransitionLink from '@/components/common/TransitionLink';
 
-const NextLink = () => {
+interface NextLinkProps {
+  pathname?: string;
+  labelKey?: string;
+}
+
+const NextLink = ({ 
+  pathname = "/about",
+  labelKey = "home.next-button"
+}: NextLinkProps) => {
   const { t } = useT();
 
   return (
-    <TransitionLink href="/about" className="next-link" data-cursor="pointer">
+    <TransitionLink href={pathname} className="next-link" data-cursor="pointer">
         <div className="svg-container">
             <svg className="border-svg">
                 <rect 
@@ -27,7 +35,7 @@ const NextLink = () => {
             </svg>
         </div>
         
-        <span className="text">{t("home.next-button")}</span>
+        <span className="text">{t(labelKey)}</span>
         
         <div className="arrow-wrapper">
             <HiArrowLongRight />
