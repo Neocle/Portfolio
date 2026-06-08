@@ -163,8 +163,8 @@ export default function Page() {
             <div className="contact-details">
                 <div className="detail-item">
                     <span className="label">{t("contact.email-label")}</span>
-                    <a href="mailto:lois.alirol.pro@gmail.com" className="value email-marker">
-                        lois.alirol.pro@gmail.com
+                    <a href="mailto:contact@loisalirol.com" className="value email-marker">
+                        contact@loisalirol.com
                     </a>
                 </div>
 
