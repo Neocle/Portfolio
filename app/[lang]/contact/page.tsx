@@ -8,7 +8,6 @@ import { useTitle } from "@/hooks/useTitle";
 import '@/styles/pages/Contact.css'
 import { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from "react-google-recaptcha";
 import NextLink from "@/components/common/NextLink";
 
 export default function Page() {
@@ -16,7 +15,6 @@ export default function Page() {
   useTitle(`${t("contact.page-title")} | Loïs Alirol`);
 
   const observerRef = useRef<IntersectionObserver | null>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'sending' | 'success'>('idle');
@@ -28,19 +26,13 @@ export default function Page() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setErrorMessage(null); // On efface l'erreur précédente lors d'une nouvelle tentative
+    setErrorMessage(null);
 
     const lastSent = localStorage.getItem("5GDBhf63Bdfhey63Gfhst9Y27RKslfbzg53hfj?/jfye.urfn");
     const now = Date.now();
 
     if (lastSent && now - Number(lastSent) < 86400000) {
       setErrorMessage(t("contact.wait-before-message"));
-      return;
-    }
-
-    const token = recaptchaRef.current?.getValue();
-    if (!token) {
-      setErrorMessage(t("contact.captcha-incomplete"));
       return;
     }
 
@@ -54,13 +46,11 @@ export default function Page() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          "g-recaptcha-response": token,
         },
         'PNSOWKX7PAEfELwwa'
       );
 
       localStorage.setItem("5GDBhf63Bdfhey63Gfhst9Y27RKslfbzg53hfj?/jfye.urfn", now.toString());
-      recaptchaRef.current?.reset();
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
 
@@ -131,13 +121,6 @@ export default function Page() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                />
-              </div>
-
-              <div className="input-group">
-                <ReCAPTCHA
-                  sitekey="6LdhG2ksAAAAADAs42AE9O9WO5VJcjQu0P3_7cR1"
-                  ref={recaptchaRef}
                 />
               </div>
 
