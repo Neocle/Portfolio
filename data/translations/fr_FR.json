@@ -25,7 +25,7 @@
     "page-title": "Accueil",
     "subtitle": "Étudiant en informatique, développeur logiciel",
     "description": {
-      "value": "Je passe mes journées à construire des applications à travers différents {{projects}} qui me tiennent à coeur. Si je ne suis pas en train de coder, je suis probablement en train de jouer à divers jeux vidéos. Quoi qu’il en soit, vous pouvez {{contact}}.",
+      "value": "La plupart de mon temps libre, je le passe à concevoir et coder des {{projects}} assez cool. Quand je prend une pause, c'est souvent devant des jeux vidéo. Dans tous les cas, je suis disponible et vous pouvez {{contact}} quand vous voulez.",
       "projects-link": "PROJETS",
       "contact-link": "ME CONTACTER"
     },
