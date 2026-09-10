@@ -24,25 +24,25 @@ export const getAboutDomains = (t: (key: string) => string): AboutDomain[] => [
     id: 'front',
     title: t('about.skills.front.title'),
     description: t('about.skills.front.description'),
-    techs: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.JS', 'TailwindCSS'],
+    techs: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.JS', 'TailwindCSS', 'QML'],
   },
   {
     id: 'back',
     title: t('about.skills.back.title'),
     description: t('about.skills.back.description'),
-    techs: ['C++', 'Java', 'Java Servlets', 'Node.JS', 'Python', 'REST API'],
+    techs: ['C++', 'Java', 'Node.JS', 'Python', 'REST API', 'Qt Framework'],
   },
   {
     id: 'db',
     title: t('about.skills.databases.title'),
     description: t('about.skills.databases.description'),
-    techs: ['SQL', 'PL-SQL', 'MySQL', 'SQLite', 'H2 Database'],
+    techs: ['SQL', 'PL-SQL', 'MySQL', 'SQLite', 'H2 Database', 'Qt SQL'],
   },
   {
     id: 'tooling',
     title: t('about.skills.tooling.title'),
     description: t('about.skills.tooling.description'),
-    techs: ['Git', 'GitHub', 'Bash / Shell', 'Maven', 'Gradle'],
+    techs: ['Git', 'GitHub', 'Github Actions', 'Gitlab', 'Bash / Shell', 'Maven', 'Gradle'],
   },
 ];
 
